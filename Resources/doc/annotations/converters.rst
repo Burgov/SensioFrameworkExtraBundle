@@ -204,7 +204,7 @@ To register your converter service you must add a tag to your service
     .. code-block:: xml
 
         <service id="my_converter" class="MyBundle/Request/ParamConverter/MyConverter">
-            <tag name="request.param_converter" priority="-2" name="my_converter" />
+            <tag name="request.param_converter" priority="-2" converter="my_converter" />
         </service>
 
 You can register a converter by priority, by name or both. If you don't
